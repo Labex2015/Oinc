@@ -1,0 +1,151 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/container"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            tools:context=".MainActivity" tools:ignore="MergeRootFrame"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/header_main"
+                android:layout_gravity="center">
+
+
+                <RelativeLayout
+                    android:id="@+id/bg_objetivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_title_objetivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="OBJETIVO"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/orange"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_value_objetivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="000.00"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-7dp"
+                        android:textColor="@color/orange"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_below="@+id/tv_title_objetivo"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_reset"
+                        android:src="@drawable/btn_config"
+                        android:background="@drawable/sel_btn"
+                        android:clickable="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="30dp"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/buyButton"
+                        android:src="@drawable/btn_done"
+                        android:background="@drawable/sel_btn"
+                        android:visibility="invisible"
+                        android:clickable="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:textSize="25dp"
+                android:id="@+id/additionalValueTextView"
+                android:layout_below="@+id/top"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="97dp"
+                android:layout_marginStart="97dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/footer"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/button_default_bottom_margim">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ImageButton
+                    android:id="@+id/goToMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_door"
+                    android:background="@drawable/sel_btn"
+                    android:clickable="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/button_ring_left_margim"
+                    android:layout_centerInParent="true" />
+
+                <ImageButton
+                    android:id="@+id/newEntryButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_money"
+                    android:background="@drawable/sel_btn"
+                    android:clickable="true"
+                    android:layout_centerInParent="true"/>
+
+                <ImageButton
+                    android:id="@+id/btn_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_obj"
+                    android:background="@drawable/sel_btn"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/button_ring_rigth_margim"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+

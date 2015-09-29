@@ -1,0 +1,107 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:paddingTop="@dimen/activity_top_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="labex.feevale.br.oinc.views.fragments.NewEntryFragment">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/font_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/financial_transactions" />
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radio_entry">
+
+            <RadioButton
+                android:id="@+id/radio_won"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/font_default"
+                android:text="@string/won" />
+
+            <RadioButton
+                android:id="@+id/radio_spend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/font_default"
+                android:text="@string/spend" />
+
+            <RadioButton
+                android:id="@+id/radio_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/font_default"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edit_value"
+            android:digits="0123456789R$,."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            style="@style/value_style"
+            android:focusable="true"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/button_default_bottom_margim">
+
+       <Button
+           android:id="@+id/btn_entry_back"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           style="@style/btn_default_style"
+           android:text="@string/back"
+           android:layout_weight="1"
+           android:layout_marginRight="@dimen/button_default_rigth_margim"
+           android:layout_gravity="bottom" />
+
+
+       <ImageButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/btn_trip"
+           android:src="@drawable/btn_strip_plus"
+           android:layout_gravity="bottom"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:background="@drawable/sel_btn"/>
+
+       <Button
+           android:id="@+id/btn_entry_next"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           style="@style/btn_default_style"
+           android:text="@string/confirm"
+           android:layout_gravity="bottom"
+           android:layout_weight="1"
+           android:layout_marginLeft="@dimen/abc_dropdownitem_text_padding_left"/>
+
+    </LinearLayout>
+</FrameLayout>

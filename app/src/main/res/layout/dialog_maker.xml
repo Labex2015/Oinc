@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        style="@style/CustomTitleComments"
+        android:id="@+id/textTitleDialog"
+     />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shp_border_comment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/messageTextViewDialog"
+            android:layout_marginTop="16px"
+            android:focusable="true"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel_Dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/btn_default_style"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/button_default_rigth_margim"
+                android:layout_gravity="bottom" />
+
+            <Button
+                android:id="@+id/btn_confirm_Dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/btn_default_style"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/abc_dropdownitem_text_padding_left"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

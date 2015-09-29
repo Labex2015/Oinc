@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_objective"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/goalNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="@string/register_label"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/orange"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/choosePhotoUserView"
+            android:layout_width="@dimen/picture_form_width"
+            android:layout_height="@dimen/picture_form_height"
+            android:src="@drawable/objective"
+            android:background="@color/orange"
+            android:layout_below="@+id/goalNameTextView"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+        <labex.feevale.br.oinc.custom.OincEditText
+            android:id="@+id/userNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_new_register_name"
+            style="@style/editText_default_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/choosePhotoUserView"
+            android:layout_alignLeft="@+id/choosePhotoUserView"
+            android:inputType="textCapSentences"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <labex.feevale.br.oinc.custom.OincEditText
+            android:id="@+id/userEmailEditText"
+            android:hint="@string/hint_new_register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:ems="30"
+            android:layout_alignLeft="@+id/choosePhotoUserView"
+            style="@style/value_style"
+            android:layout_below="@id/userNameEditText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:inputType="textEmailAddress"/>
+
+    </LinearLayout>
+
+    <labex.feevale.br.oinc.custom.OincButton
+        android:id="@+id/saveUserButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/register_button"
+        style="@style/btn_default_style"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:drawable="@drawable/shp_btn_default_shadow"/>
+            <item
+                android:drawable="@drawable/shp_btn_default_pressed"/>
+        </layer-list>
+    </item>
+
+    <item android:state_enabled="false">
+        <layer-list>
+            <item android:drawable="@drawable/shp_btn_default_shadow"/>
+            <item
+                android:drawable="@drawable/shp_btn_default_desable"
+                android:bottom="4px"
+                android:left="2px"/>
+        </layer-list>
+    </item>
+
+    <item android:state_enabled="true">
+        <layer-list>
+            <item android:drawable="@drawable/shp_btn_default_shadow"/>
+            <item
+                android:drawable="@drawable/shp_btn_default_normal"
+                android:bottom="4px"
+                android:left="2px"/>
+        </layer-list>
+    </item>
+</selector>

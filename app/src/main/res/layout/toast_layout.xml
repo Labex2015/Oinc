@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#0f2f2f"
+    android:weightSum="1">
+
+    <ImageView
+        android:src="@drawable/btn_oinc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:background="#fff" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:textColor="@color/white"
+        android:background="#0f2f2f"
+        android:textSize="15dp"
+        android:id="@+id/buttonToast"
+        android:layout_weight="0.5" />
+</LinearLayout>
